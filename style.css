@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+One&display=swap');
 
 :root{
-      --primary:#FF914D;
+      /* --primary:#FF914D; */
+      --primary:#B6281E;
    --primary-d:#CC5407;
    --white:#ffff;
    --black:#000000;
@@ -26,7 +27,7 @@ body{
       color: var(--white);
 }
 .Support .me{
-      border-bottom: 2px solid var(--black);
+      border-bottom: 2px solid var(--white);
 }
 
 .Support .first_order{
@@ -52,23 +53,12 @@ header{
      border-bottom: 3px solid var(--black);
 }
 
-header .logo{
-    position: absolute;
-     top: 90px;
-     left: 30px;
-     background-color: var(--black);
-     width: 80px;
-     height: 8px;
-     border-top-left-radius: 10px;
-     border-bottom-right-radius: 50px;
-     
 
-}
 
 header nav a{
      margin: 15px;
      text-decoration: none;
-     color: var(--black);
+     color: #8F3630;
 }
 
 header .shop_icon{
@@ -79,6 +69,7 @@ header .shop_icon{
 
 header i{
       font-size: 1.3rem;
+      color: #8F3630;
 }
 
 
@@ -103,9 +94,8 @@ header .quantity{
 
 
 
-
  .home_page{
-       background-image: url(images/Green_Orange.png);
+       background-image: url(images/red_back.png);
        background-position: center;
        background-size: cover;
        background-repeat: no-repeat;
@@ -133,11 +123,13 @@ header .quantity{
 
   .home_content .icon_home i{
        font-size: 2rem;
+       
   }
 
 
 .home_content .icon_home  h2{
    color: var(--primary-d);
+   color: #8F3630;
 }
 
 .home_content  h1{
@@ -148,6 +140,8 @@ header .quantity{
 
 .home_content p{
       margin-top: -20px;
+      color: var(--white);
+     
 }
 
 .home_content  button{
@@ -156,11 +150,14 @@ header .quantity{
       border: none;
       border-radius: 10px;
       box-shadow: 0 0 3px var(--black);
+      color: #8F3630;
+      font-weight: 600;
+      
 }
 
 .home_content a{
        margin-left: 20px;
-      color: var(--black);
+      color:var(--white);
 }
 
 
@@ -176,7 +173,7 @@ header .quantity{
       /* max-width: 600px; */
       background-color: #FFF3F3;
       padding:30px;
-      border-left: 4px solid #FC7E2D;
+      border-left: 4px solid #e02400;
       border-top-left-radius:20px;
       border-bottom-left-radius: 20px;
       box-shadow: 0 0 4px var(--black);
@@ -220,6 +217,7 @@ header .quantity{
      padding-inline: 4rem;
      margin-top: 40px;
 }
+
 
 .category_products .name_smartphone a{
        margin-left: 15px;
