@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+One&display=swap');
+
+:root{
+      --primary:#FF914D;
+   --primary-d:#CC5407;
+   --white:#ffff;
+   --black:#000000;
+}
+
+body{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Sansita One", cursive;
+   color: var(--black);
+   
+}
+
+.Support{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--primary);
+      padding-inline: 2rem;
+      color: var(--white);
+}
+.Support .me{
+      border-bottom: 2px solid var(--black);
+}
+
+.Support .first_order{
+      color: var(--primary-d);
+      background-color: var(--white);
+      padding: 5px;
+      border-radius: 5px;
+}
+
+.Support .close_support i{
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--white);
+}
+
+/* style header */
+header{
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-inline: 2rem;
+     border-bottom: 3px solid var(--black);
+}
+
+header .logo{
+    position: absolute;
+     top: 90px;
+     left: 30px;
+     background-color: var(--black);
+     width: 80px;
+     height: 8px;
+     border-top-left-radius: 10px;
+     border-bottom-right-radius: 50px;
+     
+
+}
+
+header nav a{
+     margin: 15px;
+     text-decoration: none;
+     color: var(--black);
+}
+
+header .shop_icon{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+}
+
+header i{
+      font-size: 1.3rem;
+}
+
+
+header .shpoquantity{
+      position: relative;
+}
+
+header .quantity{
+     width: 20px;
+     height: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      background-color: red;
+      position: absolute;
+      border-radius: 50%;
+      top:-5px;
+      left: 50%;
+      
+      color: #ffffff;
+}
+
+
+
+
+ .home_page{
+       background-image: url(images/Green_Orange.png);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       height: 100vh;
+ }
+
+.home_content{
+       width: 600px;
+       position: absolute;
+       top: 40%;
+       left: 4%;   
+ }
+
+ .home_content .icon_home{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--white);
+      width: fit-content;
+      padding: 0.1px 20px;
+      border-radius: 30px;
+      border-bottom: 2px solid var(--black);
+      box-shadow: 0  0 10px var(--black);
+ }
+
+  .home_content .icon_home i{
+       font-size: 2rem;
+  }
+
+
+.home_content .icon_home  h2{
+   color: var(--primary-d);
+}
+
+.home_content  h1{
+       font-size: 3.5rem;
+       color: var(--white);
+       letter-spacing: 7px;
+}
+
+.home_content p{
+      margin-top: -20px;
+}
+
+.home_content  button{
+        background-color: var(--white);
+      padding: 0.6rem 30px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 3px var(--black);
+}
+
+.home_content a{
+       margin-left: 20px;
+      color: var(--black);
+}
+
+
+.list_products{
+      display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(350px,1.5rem));
+    gap: 30px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.list_products .products{
+      /* max-width: 600px; */
+      background-color: #FFF3F3;
+      padding:30px;
+      border-left: 4px solid #FC7E2D;
+      border-top-left-radius:20px;
+      border-bottom-left-radius: 20px;
+      box-shadow: 0 0 4px var(--black);
+      transition: 0.3s ease;
+}
+
+.list_products .products:hover{
+       transform: translateY(-10px);
+}
+
+.images{
+       text-align: center;
+}
+
+.images img{
+     width:100%;
+}
+
+.products .shop_now{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+}
+
+.products .shop_now P{
+      font-size: 1.5rem; 
+}
+.products .shop_now i{
+       font-size: 1.7rem;
+       cursor: pointer;
+}
+
+.products #star{
+      color:var(--primary);
+}
+
+.category_products{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-inline: 4rem;
+     margin-top: 40px;
+}
+
+.category_products .name_smartphone a{
+       margin-left: 15px;
+       color: var(--black);
+       border-bottom: 2px solid #fc7e2d;
+}
