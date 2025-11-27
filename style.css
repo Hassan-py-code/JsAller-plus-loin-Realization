@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sansita+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Kaushan+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
       /* --primary:#FF914D; */
       --primary:#B6281E;
@@ -29,9 +29,10 @@ body{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: var(--primary);
+      background-color: var(--primary-d);
       padding-inline: 2rem;
       color: var(--white);
+      
 }
 .Support .me{
       border-bottom: 2px solid var(--white);
@@ -58,6 +59,7 @@ header{
      justify-content: space-between;
      padding-inline: 2rem;
      border-bottom: 3px solid var(--black);
+
 }
 
 
@@ -101,7 +103,7 @@ header .quantity{
 
 
  .home_page{
-       background-image: url(images/red_back.png);
+       background-image: url(images/Green_Orange.png);
        background-position: center;
        background-size: cover;
        background-repeat: no-repeat;
@@ -170,20 +172,28 @@ header .quantity{
 .list_products{
       display: grid;
     grid-template-columns:repeat(auto-fill,minmax(350px,1.5rem));
-    gap: 30px;
+    gap: 15px;
     justify-content: center;
     margin-top: 5%;
+    
 }
 
 .list_products .products{
-      /* max-width: 600px; */
       background-color: #FFF3F3;
       padding:30px;
-      border-left: 4px solid #e02400;
+      border-left: 4px solid #ff9a5b;
       border-top-left-radius:20px;
       border-bottom-left-radius: 20px;
       box-shadow: 0 0 4px var(--black);
       transition: 0.3s ease;
+}
+
+
+
+
+.list_products .products p{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
 }
 
 .list_products .products:hover{
@@ -195,7 +205,7 @@ header .quantity{
 }
 
 .images img{
-     width:100%;
+     width:200px;
 }
 
 .products .shop_now{
@@ -206,6 +216,7 @@ header .quantity{
 
 .products .shop_now P{
       font-size: 1.5rem; 
+    
 }
 .products .shop_now i{
        font-size: 1.7rem;
@@ -216,6 +227,8 @@ header .quantity{
       color:var(--primary);
 }
 
+
+
 .name_smartphone{
      display: flex;
      align-items: center;
@@ -224,9 +237,144 @@ header .quantity{
      margin-top: 40px;
 }
 
+.name_smartphone input{
+       padding: 0.4rem 30px;
+       border: 2px solid var(--primary-d);
+       outline: none;
+       border-radius: 10px;
+}
+
 
  .name_smartphone a{
        margin-left: 15px;
        color: var(--black);
        border-bottom: 2px solid #fc7e2d;
 }
+
+
+/* form */
+
+
+
+
+.contact .contact-title{
+      
+    font-size: 2.8rem;
+    background: linear-gradient(var(--primary-d)15%, var(--primary) 85%);
+     background-clip:Text;
+     -webkit-text-fill-color: transparent;
+     text-align: center;
+
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label{
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--primary-d);
+    width: fit-content;
+    
+}
+
+.form-input,.form-textarea{
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    transition: all 0.3s ease;
+  
+    color: black;
+    font-weight: 600;
+}
+
+.form-input:focus,.form-textarea:focus{
+    border-color: var(--primary);
+    outline: none;
+}
+
+.form-textarea{
+    min-height: 150px;
+    resize: none;
+}
+
+.submit-btn{
+    
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background:linear-gradient(90deg, var(--primary-d),#ff914d );
+}   
+
+
+.submit-btn:hover{
+    background:linear-gradient(90deg, #ff914d, var(--primary-d) );
+    transform: scale( 1.05);  
+}
+
+
+
+/* style footer */
+footer{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  background-color: #ff914d;
+  padding: 20px;
+}
+
+footer div h2{
+       color: #ffff;
+       text-align: center;
+}
+
+footer div .icon_media{
+       background-color: #ffffff;
+       padding: 10px;
+       width: 90px;
+       height: 90px;
+       border-radius: 50%;
+       margin-left: 6px;
+}
+
+
+
+footer div .icon_media i{ 
+      font-size: 1rem;
+      color: var(--black);
+}
+
+footer .links{
+      margin-top: 10px;
+}
+
+footer .links a{
+       color: var(--white);
+       margin-top: 10px;
+       display: block;
+       text-align: center;
+}
+
+.copy-right{
+       /* background-color: var(--white); */
+       text-align: center;
+}
+
+

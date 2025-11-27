@@ -1,115 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link style css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- link font icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <title>Ecommerce</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link style css -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- link font icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <title>Ecommerce</title>
+</head>
 
 
-  <body>
-    <div class="Support">
-      <div>
-        <p>Support me <span class="me">+212648767954</span></p>
-      </div>
+<body>
 
-      <div>
-        <p>
-          Sign and <span class="first_order">get 25% OFF</span>For You First
-          Order
-        </p>
-      </div>
-
-      <div class="close_support">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
+  <div class="Support">
+    <div>
+      <p>Support me <span class="me">+212648767954</span></p>
     </div>
 
-    <!-- header -->
+    <div>
+      <p>
+        Sign and <span class="first_order">get 25% OFF</span>For You First
+        Order
+      </p>
+    </div>
 
-    <header>
-      <div>
-        <h3>Runway</h3>
-        <div class="logo"></div>
-      </div>
+    <div class="close_support">
+      <i class="fa-solid fa-xmark" id="close"></i>
+    </div>
+  </div>
 
-      <div>
-        <nav>
-          <a href="#Home" >Home</a>
-          <a href="#shop">Shop</a>
-          <a href="#contacts">Contact Us</a>
-        </nav>
-      </div>
+  <!-- header -->
 
-      <div class="shop_icon">
-        <span
-          ><i class="fa-regular fa-heart"></i> <br />
-          like
+  <header>
+    <div>
+      <h3>Runway</h3>
+      <div class="logo"></div>
+    </div>
+
+    <div>
+      <nav>
+        <a href="#Home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#contacts">Contact Us</a>
+      </nav>
+    </div>
+
+    <div class="shop_icon">
+      <span><i class="fa-regular fa-heart"></i> <br />
+        like
+      </span>
+
+      <div class="shpoquantity">
+        <span><i class="fa-solid fa-cart-plus"></i> <br />
+          Bag
         </span>
+        <div class="quantity">0</div>
+      </div>
+    </div>
+  </header>
 
-        <div class="shpoquantity">
-          <span
-            ><i class="fa-solid fa-cart-plus"></i> <br />
-            Bag
-          </span>
-          <div class="quantity">0</div>
+  <main>
+    <!--home page  -->
+    <section id="Home">
+      <div class="home_page"></div>
+      <div class="home_content">
+        <div class="icon_home">
+          <i class="fa-solid fa-fan"></i>
+          <h2>The best online furniture</h2>
+        </div>
+        <h1>About Runway</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit
+          quia harum exercitationem iusto dolore eos adipisci praesentium est
+          tenetur, quibusdam dolor iste soluta nisi!
+        </p>
+
+        <div class="btn">
+          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="#">View all products</a>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="Home">
-        <div class="home_page"></div>
-        <div class="home_content">
-          <div class="icon_home">
-            <i class="fa-solid fa-fan"></i>
-            <h2>The best online furniture</h2>
-          </div>
-          <h1>About Runway</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit
-            quia harum exercitationem iusto dolore eos adipisci praesentium est
-            tenetur, quibusdam dolor iste soluta nisi!
-          </p>
-
-          <div class="btn">
-            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
-            <a href="#">View all products</a>
-          </div>
+    
+    <!-- shop products -->
+    <section>
+      <div class="name_smartphone" id="shop">
+        <div>
+          <input type="text" placeholder="search any products 🔍" id="search_products">
         </div>
-      </section>
 
-      <section>
-  
-          <div class="name_smartphone" id="shop">
-            <div class="all_products">
-                <a href="#" id="all">All</a>
-            </div>
+        <div>
+          <a href="#" id="all">All</a>
+          <a href="#" id="Apple">Apple</a>
+          <a href="#" id="Oppo">Oppo</a>
+          <a href="#" id="realme">Realme</a>
+          <a href="#" id="samsung">Samsung</a>
+          <a href="#" id="vivo">Vivo</a>
+        </div>
 
-            <div>
-                <a href="#" id="Apple">Apple</a>
-             <a href="#" id="Oppo">Oppo</a>
-             <a href="#" id="realme">Realme</a>
-             <a href="#" id="samsung">Samsung</a>
-              <a href="#" id="vivo">Vivo</a>
-            </div>
+      </div>
+
+    </section>
+      
+     <!-- section to add products inside list_products -->
+    <section>
+      <div class="list_products"></div>
+    </section>
+
+    <!-- creat contact section -->
+    <section>
+      <div class="contact" id="contacts">
+        <h2 class="contact-title">Contact Us</h2>
+        <form action="#" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-lable">Name</label>
+            <input type="text" id="name" class="form-input" required>
 
           </div>
-        
-      </section>
 
-      <section>
-        <div class="list_products"></div>
-      </section>
-    </main>
+          <div class="form-group">
+            <label for="email" class="form-lable">Email</label>
+            <input type="email" id="email" class="form-input" required>
+          </div>
 
-    <script src="main.js"></script>
-  </body>
+          <div class="form-group">
+            <label for="address" class="form-lable">Address</label>
+            <input type="text" id="address" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-lable">Message</label>
+            <textarea id="message" class="form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- footer -->
+  <footer>
+
+    <div class="links">
+      <h2>Runway</h2>
+      <a href="#" id="Home">Home</a>
+      <a href="#" id="Shop">Shop</a>
+    </div>
+
+    <div>
+      <h2>Social Media</h2>
+      <a href="#" class="icon_media"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="icon_media"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" class="icon_media"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+  </footer>
+   
+  <!-- copy_right -->
+  <div class="copy-right">
+    <p>&copy; 2025 Mr Hassan</p>
+  </div>
+
+
+   <!-- link script js -->
+  <script src="main.js"></script>
+</body>
+
 </html>
